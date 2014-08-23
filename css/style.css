@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-size:14px; line-height:22px; font-family:"Roboto", Arial, Helvetica, sans-serif;background:url(../img/body-bg.jpg) center top no-repeat #000; color:#ccc; min-width:320px;}
+
+a {color:#a62f24; transition:all 0.2s}
+a:hover {color:#990000; text-decoration:none;}
+
+h1, h2, h3, p {margin:0px 0px 22px 0px;}
+
+input[type=text] {padding:4px 4px; font-size:13px; line-height:20px; color:#333; outline:none; box-shadow:none; border:1px solid #ccc;}
+
+.input-large {width:240px;}
+
+select {padding:4px 4px; font-size:13px; line-height:20px; color:#333; outline:none; box-shadow:none; border:1px solid #ccc;}
+
+/* CONTENT */
+
+.content h1, .content h2, .content h3 {font-family:"Roboto Condensed"; text-transform:uppercase; font-weight:200;}
+.content ul {list-style-type:square; color:#999;}
+
+
+/* BUTTONS */
+a.btn, button.btn, input.btn {border:none; text-align:center; line-height:20px; text-shadow:0px 0px 5px rgba(0,0,0,0.6); font-family:"Roboto Condensed"; text-transform:uppercase; background:#666; display:inline-block; color:#fff !important; padding:5px 15px; box-shadow:none; outline:none}
+.btn:hover {background:#900  !important;}
+a.btn-big,  button.btn-big , input.btn-big {padding:12px 30px; font-size:16px;border:3px double #333 }
+a.btn-red, button.btn-red , input.btn-red {background:#a62f24;}
+.btn-block, button.btn-block , input.btn-block {display:block !important; width:100% }
+
+button span {display:block;}
+
+/* HEADER */
+
+.block-header {margin:40px 0px;}
+.block-header ul {margin:0; padding:0; list-style:none; font-family:"Roboto Condensed"; text-transform:uppercase; font-weight:200}
+h1.logo {margin:0; padding:0; list-style:none; float:left}
+h1.logo a {display:inline-block; padding:20px; background:#000;}
+.main-menu {height:50px;}
+.main-menu li {float:left;}
+.main-menu li a {text-shadow:0px 0px 5px rgba(0,0,0,0.6); font-size:16px; display:block; float:left; line-height:20px; padding:15px 15px; background:#222222; color:#ccc;}
+.main-menu li a:hover {background:#000; color:#fff;}
+.main-menu li.active a {background:#a62f24; color:#fff}
+.main-menu ul {display:none;}
+.sub-menu {height:40px;}
+.sub-menu li {float:left;}
+.sub-menu li a {text-shadow:0px 0px 5px rgba(0,0,0,0.6); font-size:14px; display:block; float:left; line-height:20px; padding:10px 15px; background:#111; color:#999;}
+.sub-menu li a:hover {background:#000; color:#fff;}
+
+.block-filter {margin-bottom:30px;}
+
+
+.filters input, .filters select {width:100%; border:none; font-size:14px; color:#333; line-height:20px; padding:5px 0px; box-sizing:border-box; height:50px; box-shadow:none; outline:none;}
+
+
+
+.filters {clear:both; background:#fff; padding:0px 20px 0px 20px;}
+.filters .btn {display:block; width:100%; line-height:20px; padding-right:5px; padding-left:5px; margin:10px 0px 10px 5px}
+.filters .row > div {padding:0px 5px; border-right:1px solid #999;}
+.filters .row > div:last-child {border-right:none;}
+
+@media (max-width:992px) {
+	.filters input, .filters select {border:1px solid #ccc; margin-bottom:10px; padding:10px; height:46px;}	
+	.filters {padding: 20px;}
+	.filters .row > div {border:none;}
+	.filters .btn {margin:0px; padding:15px 0px}
+	h1.logo {float:none; width:auto;}
+}
+
+
+/* BANNER */
+
+.block-banner { margin-bottom:40px;}
+
+/* BREAD */
+
+.breadcrumb {text-align:right; padding:13px; text-transform:uppercase; font-family:"Roboto Condensed"; font-weight:200; font-size:16px;}
+.breadcrumb a {color:#fff;}
+.breadcrumb span {color:#999;}
+
+/* BOTTOM */
+
+.block-bottom {padding:0px 20px; font-size:12px; line-height:20px; color:#999; border-top:2px solid #222; border-bottom:2px solid #222; padding-top:30px; text-transform:uppercase; margin-bottom:30px;}
+.block-bottom p {margin-bottom:20px;}
+.block-bottom a {color:#ccc;}
+.block-bottom a:hover {color:#fff;}
+.block-bottom .module {margin-bottom:40px;}
+.block-bottom h3 {color:#999; text-transform:uppercase; font-family:"Roboto Condensed"; font-size:28px;  line-height:30px; margin-bottom:15px; padding-bottom:15px;}
+.block-bottom h3 b {color:#fff;font-size:16px; line-height:20px; display:block;  font-weight:200;}
+
+.support ul {margin:0; padding:0px; margin-bottom:30px; list-style:square inside}
+.support ul li {line-height:20px;}
+.hotline iframe {background:#111;}
+
+.payment ul {margin:0; padding:0; list-style:none;}
+.payment ul li {height:32px;}
+.payment ul li b {text-align:center; width:32px; padding:5px; background:#333; display:block; float:left;}
+
+/* FOOTER */
+.block-footer { margin-bottom:30px;}
+
+/* CONTENT */
+
+.block-content {margin-bottom:30px;}
+.padding {padding:20px; background:#111;}
+
+h1.page-heading {font-size:24px; line-height:20px; font-family:"Roboto Condensed"; text-transform:uppercase; font-weight:200; margin-bottom:0px}
+h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
+
+.item-name {text-transform:uppercase; text-transform:uppercase; font-family:"Roboto Condensed"; margin-bottom:0px;}
+.products .cell {margin-bottom:30px;}
+.products .cell .col-sm-12 {min-height:80px;}
+.products .cell div.class {text-transform:uppercase; font-size:11px; color:#999;}
+.products .cell h3 {text-transform:uppercase; font-family:"Roboto Condensed"; margin-bottom:0px;}
+.products .cell .price {font-family:"Roboto Condensed"; font-weight:200; font-size:22px; line-height:30px;}
+.products .cell .price span {position:relative; top:-2px; display:inline-block; padding:5px 5px; background:#F00; color:#fff;  line-height:14px; font-size:16px;}
+.products .cell img {border:5px solid #333; margin-bottom:10px;}
+.products .cell a:hover img {border-color:#666;}
+
+
+.products .rare a:hover img {border-color:#06c;}
+
+
+.children ul {margin:0; padding:0; list-style:none;}
+.children {margin-bottom:20px;}
+.children ul li {display:inline-block;}
+.children ul li a {display:inline-block; text-transform:uppercase; font-family:"Roboto Condensed"; margin-right:20px; font-size:16px;}
+
+.product #thumbs_list ul {list-style:none; margin:0; padding:0; margin-bottom:20px;}
+.product #thumbs_list li {display:inline-block;}
+.product #thumbs_list li img {border:1px solid #111;}
+.product #thumbs_list li a:hover img {border:1px solid #fff;}
+.cart-panel {border-left:1px solid #333; padding-left:14px; margin-bottom:30px;}
+.cart-panel .price {font-family:"Roboto Condensed"; }
+.cart-panel .price span {color:#fff; font-weight:200; font-size:36px; line-height:40px; display:block}
+.cart-panel .price em, .cart-panel .price b {font-style:normal; display:inline-block; font-size:14px; line-height:20px; padding:2px 5px;}
+.cart-panel .price em {background:#222; color:#666; text-decoration:line-through;}
+.cart-panel .price b {background:#F00; color:#fff; font-weight:normal;}
+.cart-panel .price:after {content:" "; clear:both; height:1px; display:block;}
+.qty {text-align:center;}
+.input-small {width:50px;}
+
+.cart-panel fieldset {border:none; margin:0; padding:0;}
+.cart-panel .radio {float:left; margin-right:3px;}
+.cart-panel span.attribute_label {display:block;}
+.cart-panel .attribute_list ul {margin:0; padding:0; list-style:none;}
+.cart-panel .attribute_list ul li {display:inline-block;}
+.cart-panel .attribute_list ul li label {display:inline-block; padding:0px 10px; line-height:12px;}
+
+
+
+.product .image {margin-bottom:30px;}
+.features table {width:100%; border:none; margin-bottom:30px;}
+.features table th {font-weight:normal; color:#666; text-align:left; width:30%}
+.features table td, .features table th {border-bottom:1px solid #222; padding:5px 0px}
+
+/* CART */
+
+.cart {margin-bottom:20px;}
+.cart-header {background:#222; padding:5px 5px;}
+.cart-row {padding:10px 0px; border-bottom:1px solid #222;}
+.cart-list .center {text-align:center;}
+.cart-list .right {text-align:right;}
+.cart-row span.price {display:block;}
+.cart-row .old-price {text-decoration:line-through; color:#999;}
+
+.cart-total {margin-top:20px; color:#fff; margin-bottom:20px;}
+.cart-total .row {padding:5px 0px;}
+.cart-total b {font-size:22px; font-weight:normal; color:#fff;}
+
+/* CHECK OUT */
+.checkout {color:#999;}
+.checkout .padding {margin-bottom:20px;}
+
+.checkout h2 {font-weight:normal; font-family:"Roboto Condensed"; color:#fff; font-weight:200; text-transform:uppercase; background:#222; padding:15px; margin-bottom:00px;}
+.checkout h2 span {display:inline-block; border-right:1px solid #999; padding:0px 15px 0px 5px; margin-right:10px;}
+.checkout-info label {display:block; color:#666;}
+.checkout-info {padding:19px 19px; border:1px solid #333;}
+.checkout-info .input-large {width:100%; box-sizing:border-box;}
+.checkout-info p {margin-bottom:10px;}
+.checkout-info p:last-child {margin-bottom:0px;}
+#opc_account_errors ol {display:none!important;}
+#opc_account_errors b {font-weight:normal; font-size:12px;}
+
+.collapsed{visibility:hidden !important; height:0px; overflow:hidden; margin-bottom:0px !important; padding:0px;}
+fieldset {margin:0; padding:0; border:none;}
+
+
+.alert {background:#C33; color:#fff; padding:5px 10px;}
+.success {background:#693; color:#fff; padding:5px 10px;}
+
+.checkout-shipping label {display:block; border:1px solid #333; padding:9px 9px 9px 19px; margin-bottom:10px; color:#fff;}
+.checkout-shipping label:hover {background:#222; cursor:pointer;}
+.checkout-shipping table {width:100%;}
+.checkout-shipping label h3 {margin-bottom:0px;}
+.checkout-shipping label p {margin-bottom:0px; color:#999;}
+.checkout-shipping label img {float:right;}
+.checkout-shipping input {display:block; margin-right:10px;}
+
+textarea {padding:5px; width:100%; box-sizing:border-box; font-family:inherit; font-size:13px; line-height:20px; color:#333;  outline:none; box-shadow:none; height:80px; resize:none;}
+
+/* PAYMENT */
+
+.big {font-size:28px; line-height:30px; color:#fff; font-family:"Roboto Condensed"; font-weight:200;}
+
