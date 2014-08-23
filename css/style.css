@@ -23,13 +23,14 @@ select {padding:4px 4px; font-size:13px; line-height:20px; color:#333; outline:n
 /* BUTTONS */
 a.btn, button.btn, input.btn {border:none; text-align:center; line-height:20px; text-shadow:0px 0px 5px rgba(0,0,0,0.6); font-family:"Roboto Condensed"; text-transform:uppercase; background:#666; display:inline-block; color:#fff !important; padding:5px 15px; box-shadow:none; outline:none}
 .btn:hover {background:#900  !important;}
-a.btn-big,  button.btn-big , input.btn-big {padding:12px 30px; font-size:16px;border:3px double #333 }
+a.btn-big,  button.btn-big , input.btn-big {padding:12px 20px; font-size:16px;border:3px double #333 }
 a.btn-red, button.btn-red , input.btn-red {background:#a62f24;}
 .btn-block, button.btn-block , input.btn-block {display:block !important; width:100% }
 
 button span {display:block;}
 
 /* HEADER */
+
 
 .block-header {margin:40px 0px;}
 .block-header ul {margin:0; padding:0; list-style:none; font-family:"Roboto Condensed"; text-transform:uppercase; font-weight:200}
@@ -46,17 +47,20 @@ h1.logo a {display:inline-block; padding:20px; background:#000;}
 .sub-menu li a {text-shadow:0px 0px 5px rgba(0,0,0,0.6); font-size:14px; display:block; float:left; line-height:20px; padding:10px 15px; background:#111; color:#999;}
 .sub-menu li a:hover {background:#000; color:#fff;}
 
+.user {text-align:right;}
+.user .profile {padding:10px 0px; text-transform:uppercase; font-family:"Roboto Condensed"; font-weight:200; line-height:20px;}
+.user .profile a {color:#ccc; display:inline-block; margin-left:20px;}
+.user .profile a:hover {color:#fff;}
+.user .btn img {float:left; vertical-align:middle; margin-right:5px}
+.user .login {margin:10px 0px;}
+
 .block-filter {margin-bottom:30px;}
-
-
 .filters input, .filters select {width:100%; border:none; font-size:14px; color:#333; line-height:20px; padding:5px 0px; box-sizing:border-box; height:50px; box-shadow:none; outline:none;}
-
-
-
 .filters {clear:both; background:#fff; padding:0px 20px 0px 20px;}
 .filters .btn {display:block; width:100%; line-height:20px; padding-right:5px; padding-left:5px; margin:10px 0px 10px 5px}
 .filters .row > div {padding:0px 5px; border-right:1px solid #999;}
 .filters .row > div:last-child {border-right:none;}
+.filters select {cursor:pointer;}
 
 @media (max-width:992px) {
 	.filters input, .filters select {border:1px solid #ccc; margin-bottom:10px; padding:10px; height:46px;}	
@@ -107,17 +111,25 @@ h1.page-heading {font-size:24px; line-height:20px; font-family:"Roboto Condensed
 h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
 
 .item-name {text-transform:uppercase; text-transform:uppercase; font-family:"Roboto Condensed"; margin-bottom:0px;}
-.products .cell {margin-bottom:30px;}
-.products .cell .col-sm-12 {min-height:80px;}
-.products .cell div.class {text-transform:uppercase; font-size:11px; color:#999;}
+.products .cell {margin-bottom:10px;}
+.products .cell .col-sm-12 {min-height:120px;}
+.products .cell .class {text-transform:uppercase; font-size:11px; line-height:15px; color:#666;}
 .products .cell h3 {text-transform:uppercase; font-family:"Roboto Condensed"; margin-bottom:0px;}
-.products .cell .price {font-family:"Roboto Condensed"; font-weight:200; font-size:22px; line-height:30px;}
-.products .cell .price span {position:relative; top:-2px; display:inline-block; padding:5px 5px; background:#F00; color:#fff;  line-height:14px; font-size:16px;}
-.products .cell img {border:5px solid #333; margin-bottom:10px;}
+.products .cell img {border:5px solid #222; margin-bottom:10px;}
 .products .cell a:hover img {border-color:#666;}
-
-
 .products .rare a:hover img {border-color:#06c;}
+
+
+/* PRICE DISPLAY */
+.price {font-family:"Roboto Condensed"; font-weight:200; }
+.price span {display:block; font-size:22px; line-height:30px; color:#fff;}
+.price em { padding:2px 5px; display:inline-block;font-style:normal; background:#222; color:#666; text-decoration:line-through;}
+.price b { padding:2px 5px;display:inline-block;background:#F00; color:#fff; font-weight:normal;}
+
+.item-info {font-size:12px; line-height:16px; margin-bottom:10px;}
+.item-info b {font-weight:normal; color:#666; display:inline-block; width:60px;}
+
+/* SUB CATEGORY */
 
 
 .children ul {margin:0; padding:0; list-style:none;}
@@ -125,16 +137,20 @@ h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
 .children ul li {display:inline-block;}
 .children ul li a {display:inline-block; text-transform:uppercase; font-family:"Roboto Condensed"; margin-right:20px; font-size:16px;}
 
+.pagination {margin-top:30px;}
+.pagination ul {list-style:none; margin:0; padding:0; text-align:center}
+.pagination li {display:inline-block;}
+.pagination li a , .pagination li span {padding:2px 10px; font-weight:bold; display:inline-block; font-size:16px; line-height:24px; text-align:center}
+.pagination li a {background:#333; color:#999;}
+.pagination li span {background:#a62f24; color:#fff;}
+
+
 .product #thumbs_list ul {list-style:none; margin:0; padding:0; margin-bottom:20px;}
 .product #thumbs_list li {display:inline-block;}
 .product #thumbs_list li img {border:1px solid #111;}
 .product #thumbs_list li a:hover img {border:1px solid #fff;}
 .cart-panel {border-left:1px solid #333; padding-left:14px; margin-bottom:30px;}
-.cart-panel .price {font-family:"Roboto Condensed"; }
-.cart-panel .price span {color:#fff; font-weight:200; font-size:36px; line-height:40px; display:block}
-.cart-panel .price em, .cart-panel .price b {font-style:normal; display:inline-block; font-size:14px; line-height:20px; padding:2px 5px;}
-.cart-panel .price em {background:#222; color:#666; text-decoration:line-through;}
-.cart-panel .price b {background:#F00; color:#fff; font-weight:normal;}
+.cart-panel .price span {font-size:32px; color:#fff; line-height:40px;}
 .cart-panel .price:after {content:" "; clear:both; height:1px; display:block;}
 .qty {text-align:center;}
 .input-small {width:50px;}
@@ -156,12 +172,13 @@ h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
 /* CART */
 
 .cart {margin-bottom:20px;}
-.cart-header {background:#222; padding:5px 5px;}
-.cart-row {padding:10px 0px; border-bottom:1px solid #222;}
-.cart-list .center {text-align:center;}
-.cart-list .right {text-align:right;}
-.cart-row span.price {display:block;}
-.cart-row .old-price {text-decoration:line-through; color:#999;}
+.cart-header, .order-header {background:#222; padding:5px 5px;}
+.cart-row, .order-row {padding:10px 0px; border-bottom:1px solid #222;}
+.cart-row .price span {font-size:inherit; font-family:"Roboto"; font-weight:normal; line-height:inherit;}
+.cart-row .price em {background:none; padding:0px;}
+.cart-list .center, .order-list .center {text-align:center;}
+.cart-list .right, .order-list .right {text-align:right;}
+
 
 .cart-total {margin-top:20px; color:#fff; margin-bottom:20px;}
 .cart-total .row {padding:5px 0px;}
@@ -201,4 +218,13 @@ textarea {padding:5px; width:100%; box-sizing:border-box; font-family:inherit; f
 /* PAYMENT */
 
 .big {font-size:28px; line-height:30px; color:#fff; font-family:"Roboto Condensed"; font-weight:200;}
+
+/* ORDERS */
+
+.order-row em { color:#666;}
+.order-row ul {list-style:none; margin:0; padding:0;}
+.order-ref {font-size:20px;}
+
+.summary .row {margin-bottom:10px; border-bottom:1px solid #333; padding-bottom:10px;}
+
 
