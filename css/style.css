@@ -90,7 +90,7 @@ h1.logo a {display:inline-block; padding:20px; background:#000;}
 .block-bottom a:hover {color:#fff;}
 .block-bottom .module {margin-bottom:40px;}
 .block-bottom h3 {color:#999; text-transform:uppercase; font-family:"Roboto Condensed"; font-size:28px;  line-height:30px; margin-bottom:15px; padding-bottom:15px;}
-.block-bottom h3 b {color:#fff;font-size:16px; line-height:20px; display:block;  font-weight:200;}
+.block-bottom h3 strong {color:#fff;font-size:16px; line-height:20px; display:block;  font-weight:200;}
 
 .support ul {margin:0; padding:0px; margin-bottom:30px; list-style:square inside}
 .support ul li {line-height:20px;}
