@@ -5,6 +5,7 @@ body {font-size:14px; line-height:22px; font-family:"Roboto", Arial, Helvetica, 
 
 a {color:#a62f24; transition:all 0.2s}
 a:hover {color:#990000; text-decoration:none;}
+.clr {clear:both;}
 
 h1, h2, h3, p {margin:0px 0px 22px 0px;}
 
@@ -162,27 +163,27 @@ h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
 .cart-panel .attribute_list ul li {display:inline-block;}
 .cart-panel .attribute_list ul li label {display:inline-block; padding:0px 10px; line-height:12px;}
 
-
-
 .product .image {margin-bottom:30px;}
 .features table {width:100%; border:none; margin-bottom:30px;}
 .features table th {font-weight:normal; color:#666; text-align:left; width:30%}
 .features table td, .features table th {border-bottom:1px solid #222; padding:5px 0px}
 
 /* CART */
-
 .cart {margin-bottom:20px;}
-.cart-header, .order-header {background:#222; padding:5px 5px;}
-.cart-row, .order-row {padding:10px 0px; border-bottom:1px solid #222;}
-.cart-row .price span {font-size:inherit; font-family:"Roboto"; font-weight:normal; line-height:inherit;}
-.cart-row .price em {background:none; padding:0px;}
-.cart-list .center, .order-list .center {text-align:center;}
-.cart-list .right, .order-list .right {text-align:right;}
-
-
+.cart .price span {font-size:inherit; font-family:"Roboto"; font-weight:normal; line-height:inherit;}
+.cart .price em {background:none; padding:0px;}
 .cart-total {margin-top:20px; color:#fff; margin-bottom:20px;}
 .cart-total .row {padding:5px 0px;}
 .cart-total b {font-size:22px; font-weight:normal; color:#fff;}
+
+/* TABLE */
+.table {margin-bottom:30px;}
+.table .table-header {background:#333; padding:5px 10px; font-weight:bold;}
+.table .table-row {padding:10px 5px; border-bottom:1px solid #222;}
+.table .table-row:last-child {border-bottom:none;}
+.table .center {text-align:center;}
+.table .right {text-align:right;}
+.table .table-row:hover {background:#222;}
 
 /* CHECK OUT */
 .checkout {color:#999;}
@@ -200,7 +201,6 @@ h1.page-heading span {display:inline-block; padding:15px 20px; background:#222;}
 
 .collapsed{visibility:hidden !important; height:0px; overflow:hidden; margin-bottom:0px !important; padding:0px;}
 fieldset {margin:0; padding:0; border:none;}
-
 
 .alert {background:#C33; color:#fff; padding:5px 10px;}
 .success {background:#693; color:#fff; padding:5px 10px;}
@@ -221,10 +221,19 @@ textarea {padding:5px; width:100%; box-sizing:border-box; font-family:inherit; f
 
 /* ORDERS */
 
-.order-row em { color:#666;}
-.order-row ul {list-style:none; margin:0; padding:0;}
+.orders .table em {color:#666; font-style:normal; font-size:12px;}
+.orders .table ul {list-style:none; margin:0; padding:0;}
 .order-ref {font-size:20px;}
 
-.summary .row {margin-bottom:10px; border-bottom:1px solid #333; padding-bottom:10px;}
+.summary b {display:inline-block; width:120px; font-weight:normal; color:#999;}
+.summary {color:#fff;}
+
+h1 .pending {float:right; margin-left:20px;}
+
+.pending {text-transform:uppercase; font-weight:normal; background:#C90; color:#fff; font-size:12px; display:inline-block; padding:1px 10px; font-family:"Roboto Condensed"}
+
+.confirmed {text-transform:uppercase; font-weight:normal; background:#693; color:#fff; font-size:12px; display:inline-block; padding:1px 10px; font-family:"Roboto Condensed"}
+
+
 
 
